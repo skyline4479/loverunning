@@ -1,6 +1,5 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap')
-
 /* Asterisk wildcard selector to override default styles added by ythe browser */
 
 * {
@@ -11,22 +10,22 @@
 
 /* General styles */
 body {
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-/* Generic project styles */
-color: #3a3a3a;
-font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Header */
 header {
-background-color:#ffffff;
-padding: 0 1rem;
-position: fixed;
-z-index: 99;
-width: 100%;
-box-shadow: 0 2px 2px #3a3a3a;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 
 header a {
@@ -42,26 +41,38 @@ h1 {
 }
 
 #menu {
-font-size: 110%;
-letter-spacing: 4px;
-list-style-type: none;
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
 
-menu > li {
+menu>li {
     margin-bottom: 1rem;
 }
 
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
 /* Main content */
 main {
-background-color:lightblue;
-/* Make main element take up any surplus space to puch footer down */
-flex: 1 0 auto;
+    background-color: lightblue;
+    /* Make main element take up any surplus space to puch footer down */
+    flex: 1 0 auto;
 }
 
 /* Footer */
 footer {
-background-color:orange;
+    background-color: orange;
 }
